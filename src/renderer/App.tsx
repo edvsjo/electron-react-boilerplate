@@ -1,7 +1,7 @@
 import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
 import './App.css';
-
+import StartPage from './StartPage';
+/*
 const Hello = () => {
   return (
     <div>
@@ -35,15 +35,18 @@ const Hello = () => {
           </button>
         </a>
       </div>
+      <div>
+        <StartPage />
+      </div>
     </div>
   );
 };
-
+*/
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/" component={Hello} />
+        <Route path="/" component={StartPage} />
       </Switch>
     </Router>
   );
